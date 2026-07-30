@@ -1,0 +1,12 @@
+PRIMER INGRESO ONLINE · VERSIÓN PARA NETLIFY
+
+1. Ingresá a https://app.netlify.com/drop
+2. Arrastrá el archivo ZIP completo.
+3. Netlify publicará la landing y te entregará una dirección.
+
+IMPORTANTE:
+- No descomprimas y vuelvas a comprimir una carpeta contenedora.
+- index.html debe quedar en la raíz del ZIP.
+- El botón Comprar ahora conserva el enlace de Mercado Pago.
+- El botón WhatsApp conserva el número configurado.
+- La página de agradecimiento queda disponible en /gracias/

@@ -1,0 +1,16 @@
+CONFIGURACIÓN EN NETLIFY
+
+1) Subí esta carpeta/ZIP como nuevo deploy.
+2) En Netlify: Site configuration > Environment variables, agregá:
+   MERCADOPAGO_ACCESS_TOKEN = tu Access Token de producción
+   BREVO_API_KEY = tu clave API de Brevo
+   BREVO_SENDER_EMAIL = nicolaspatullo2@gmail.com
+3) Volvé a desplegar el sitio después de guardar las variables.
+4) En Mercado Pago Developers > Webhooks, agregá esta URL para el evento Pagos:
+   https://primeringreso.netlify.app/.netlify/functions/mercadopago-webhook
+5) Hacé una compra de prueba real de bajo riesgo o una compra y devolución para verificar el correo.
+
+IMPORTANTE
+- No compartas las claves por chat ni las escribas dentro del código.
+- Los botones ahora crean un Checkout Pro asociado a tu aplicación.
+- El correo se envía solo cuando Mercado Pago informa status=approved y monto=$11.990.

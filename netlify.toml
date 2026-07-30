@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[headers]]
+  for = "/downloads/*"
+  [headers.values]
+    Content-Disposition = "attachment"
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "private, max-age=0, no-store"
